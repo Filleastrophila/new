@@ -1,0 +1,274 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+.container{
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+    body {
+      font-family: "Roboto", sans-serif;
+    }
+
+    header {
+      background-color: black;
+      padding: 15px 20px;
+    }
+
+    .header-container {
+      /* float: left; */
+      max-width: 1200px;
+      margin: 0 auto;
+      height: 50px;
+    }
+
+    .logo {
+      color: white;
+      float: left;
+      width: 50%;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    
+    #menu-toggle {
+      display: none;
+    }
+
+    
+    .hamburger {
+      display: none;
+      font-size: 28px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .navigation ul {
+      float: right;
+      list-style: none;
+      /* margin: 0;
+      padding: 0; */
+      
+    }
+
+    .navigation ul li {
+        display: inline-block;
+        /* float: left; */
+
+      position: relative;
+    }
+
+    .navigation ul li a {
+      padding: 10px 15px;
+      text-decoration: none;
+      color: white;
+      display: block;
+    }
+
+    .navigation ul li a:hover {
+      background-color: blueviolet;
+    }
+
+   .navigation ul li ul.dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: rgb(80, 72, 72);
+      /* list-style: none; */
+      z-index: 999;
+      min-width: 160px;
+    }
+    .navigation ul li ul.dropdown li {
+      display: block;
+    }
+
+    .navigation ul li ul.dropdown li a{
+      display: block;
+      padding: 10px 15px;
+      color: white;
+      list-style: none; 
+    }
+
+    
+    .navigation ul li:hover > ul.dropdown {
+      display: block;
+    }
+
+
+
+   
+    .section {
+      width:100%;
+      margin-top: 30px;
+      display: inline-block;
+      padding:30px ;
+      /* border: 1px solid black; */
+      
+    }
+
+    .picture {
+      width: 50%;
+      float: left;
+    }
+
+    .picture img {
+      border-radius: 5px;
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+    }
+
+
+    .imagetext{
+      padding: 20px;
+      /* text-align: center; */
+      margin-top: 50px;
+        width: 50%;
+        float: right;
+    }
+
+
+    .imagetext h4 {
+      margin-bottom: 15px;
+    }
+
+    .imagetext p {
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      color: black;
+      background-color: lightblue;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background-color: aquamarine;
+    }
+
+    .nextsub {
+      width: 100%;
+      padding: 20px;
+      margin: 10px;
+      background-color: gray;
+      border-radius: 5px;
+      color: white;
+      text-align: center;
+      /* display: inline-block; */
+      float: left;
+    }
+
+ .section-banner{
+  text-align: center;
+    /* border: 1px solid black; */
+    padding: 10px;
+    width: 100%;
+    /* margin: auto; */
+    display: inline-block;
+ }
+ .section-cards{
+  /* border: 1px solid black; */
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+  /* margin: 20px; */
+  display: inline-block;
+ }
+    .cards {
+      background-color: white;
+      border: 1px solid black;
+      padding: 20px;
+      min-width: 280px;
+      max-width: 350px;
+      border-radius: 8px;
+      display: inline-block;
+      margin: 10px;
+    }
+
+    .cards h3 {
+      margin-bottom: 15px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .cards p {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .moreinfo {
+      margin-top: auto;
+      background-color: gray;
+      border-radius: 5px;
+      padding: 5px;
+      text-align: center;
+    }
+
+    footer {
+     
+      padding: 5px;
+      text-align: center;
+      color: white;
+      background-color: black;
+      bottom: 0;
+      
+      width: 100%;
+      height: 36px;
+      position: fixed;
+    }
+
+        @media(max-width: 700px) {
+      .hamburger {
+        display: block;
+        text-align: right;
+      }
+
+      .navigation {
+        display: none;
+        right: 10px;
+        top: 70px;
+        position: absolute;
+      }
+
+      #menu-toggle:checked ~ .navigation {
+        display: block;
+      }
+
+      .navigation ul {
+        display: block;
+        background-color: black;
+
+      }
+
+
+      .picture{
+        width: 100%;
+      }
+.imagetext{
+    display: block;
+    width: 100%;
+}
+    
+.section{
+    display: block;
+}
+
+
+      /* .dropdown {
+        position: static;
+      } */
+
+      .navigation ul li:hover > .dropdown  {
+        display: block;
+      }
+    }
