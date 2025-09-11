@@ -3,6 +3,21 @@
       margin: 0;
       padding: 0;
     }
+    
+    .clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
 .container{
   max-width: 1200px;
   padding-left: 20px;
@@ -23,7 +38,7 @@
       /* float: left; */
       max-width: 1200px;
       margin: 0 auto;
-      height: 50px;
+      height: 30px;
     }
 
     .logo {
@@ -31,7 +46,8 @@
       float: left;
       width: 50%;
       font-size: 20px;
-      font-weight: bold;
+      /* font-weight: bold; */
+      padding-top: 5px;
     }
 
     
@@ -104,15 +120,15 @@
    
     .section {
       width:100%;
-      margin-top: 30px;
-      display: inline-block;
-      padding:30px ;
+      margin-top: 20px;
+      /* display: inline-block; */
+      /* padding:30px ; */
       /* border: 1px solid black; */
       
     }
 
     .picture {
-      width: 50%;
+      width: 60%;
       float: left;
     }
 
@@ -125,16 +141,17 @@
 
 
     .imagetext{
-      padding: 20px;
+      padding: 30px;
       /* text-align: center; */
       margin-top: 50px;
-        width: 50%;
+        width: 40%;
         float: right;
     }
 
 
     .imagetext h4 {
       margin-bottom: 15px;
+      font-size: 25px;
     }
 
     .imagetext p {
@@ -143,8 +160,8 @@
 
     .btn {
       padding: 10px 20px;
-      color: black;
-      background-color: lightblue;
+      color: white;
+      background-color: #2222ec;
       text-decoration: none;
       border-radius: 5px;
       display: inline-block;
@@ -152,46 +169,56 @@
 
     .btn:hover {
       background-color: aquamarine;
+      color: black;
     }
 
     .nextsub {
       width: 100%;
+      height: 80px;
       padding: 20px;
-      margin: 10px;
+      margin: 0;
+      /* margin-left: 0; */
       background-color: gray;
       border-radius: 5px;
       color: white;
+      /* border: 1px solid black; */
       text-align: center;
-      /* display: inline-block; */
-      float: left;
     }
-
+.nextsub p{
+  padding-top: 10px;
+}
  .section-banner{
   text-align: center;
     /* border: 1px solid black; */
-    padding: 10px;
+    padding: 20px 0;
     width: 100%;
-    /* margin: auto; */
-    display: inline-block;
+
  }
  .section-cards{
   /* border: 1px solid black; */
   width: 100%;
   margin-bottom: 50px;
   text-align: center;
-  /* margin: 20px; */
-  display: inline-block;
+  padding: 20px 0;
+  box-sizing: border-box;
+
  }
     .cards {
       background-color: white;
       border: 1px solid black;
-      padding: 20px;
+      padding: 30px 20px 60px 20px;
+     position: relative;
       min-width: 280px;
       max-width: 350px;
       border-radius: 8px;
+      margin: 1%;
       display: inline-block;
-      margin: 10px;
+      width: 33.33%;
+      box-sizing: border-box;
+      text-align:left ;
+    
     }
+
 
     .cards h3 {
       margin-bottom: 15px;
@@ -203,15 +230,25 @@
       font-size: 15px;
       line-height: 1.5;
       margin-bottom: 15px;
-      text-align: center;
+      text-align: left;
     }
 
     .moreinfo {
-      margin-top: auto;
-      background-color: gray;
-      border-radius: 5px;
-      padding: 5px;
-      text-align: center;
+
+      background-color: rgb(241, 239, 239);
+      border-radius: 8px;
+      padding: 10px;
+      text-align: left;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .moreinfo .btn{
+      display: inline-block;
+      padding: 8px ;
+
     }
 
     footer {
@@ -221,10 +258,13 @@
       color: white;
       background-color: black;
       bottom: 0;
-      
       width: 100%;
-      height: 36px;
+      height: 50px;
       position: fixed;
+    }
+    footer p{
+      text-align: center;
+      padding-top: 15px;
     }
 
         @media(max-width: 700px) {
@@ -263,10 +303,6 @@
     display: block;
 }
 
-
-      /* .dropdown {
-        position: static;
-      } */
 
       .navigation ul li:hover > .dropdown  {
         display: block;

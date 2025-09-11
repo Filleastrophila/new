@@ -7,6 +7,13 @@
     body {
       font-family: "Roboto", sans-serif;
     }
+      .container{
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
 
     header {
       background-color: black;
@@ -24,7 +31,7 @@
     .logo {
       color: white;
       font-size: 20px;
-      font-weight: bold;
+      /* font-weight: bold; */
     }
 
     
@@ -41,21 +48,17 @@
     }
 
    
-    /* .navigation {
-      display: flex;
-    } */
+
 
     .navigation ul {
       /* display: flex; */
       list-style: none;
       margin: 0;
       padding: 0;
-      text-align: ;
     }
 
     .navigation ul li {
         display: inline-block;
-
       position: relative;
     }
 
@@ -99,9 +102,10 @@
       /* justify-content: space-between; */
       align-items: center;
       max-width: 1200px;
-      margin: 40px auto;
+      /* margin: 40px auto; */
+      margin-top: 40px;
       padding: 0 20px;
-      gap: 20px;
+      gap: 40px;
       /* flex-wrap: wrap; */
     }
 
@@ -132,8 +136,8 @@
 
     .btn {
       padding: 10px 20px;
-      color: black;
-      background-color: lightblue;
+      color: white;
+      background-color: rgb(47, 47, 226);
       text-decoration: none;
       border-radius: 5px;
       display: inline-block;
@@ -141,23 +145,31 @@
 
     .btn:hover {
       background-color: aquamarine;
+      color: black;
     }
 
     .nextsub {
       width: 100%;
       padding: 10px;
+      height: 90px;
       background-color: gray;
       border-radius: 5px;
       color: white;
       text-align: center;
     }
 
+    .nextsub p{
+      padding-top: 15px;
+    }
+
     .cards {
       background-color: white;
       border: 1px solid black;
-      padding: 20px;
+      /* padding: 20px; */
+      padding: 20px 0 0 0;
       border-radius: 8px;
       display: flex;
+      margin-bottom: 40px;
       flex-direction: column;
       justify-content: space-between;
     }
@@ -169,7 +181,6 @@
     }
 
     .cards p {
-      flex-grow: 1;
       font-size: 15px;
       line-height: 1.5;
       margin-bottom: 15px;
@@ -177,11 +188,12 @@
     }
 
     .moreinfo {
-      margin-top: auto;
+      /* margin-top: auto; */
       background-color: gray;
       border-radius: 5px;
       padding: 5px;
-      text-align: center;
+      width: 100%;
+      text-align: left;
     }
 
     footer {
