@@ -307,6 +307,9 @@
 .section{
     display: block;
 }
+       .cards:last-child{
+        margin-right:21.3px ;
+      }
 
 
       .navigation ul li:hover > .dropdown  {
@@ -336,4 +339,5 @@
         padding: 0;
         /* height: 100px; */
       }
+
     } */
