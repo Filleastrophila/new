@@ -11,6 +11,7 @@
   content: " ";
   clear: both;
   height: 0;
+  line-height: 1.5;
 }
 .clearfix { display: inline-block; }
 /* start commented backslash hack \*/
@@ -24,35 +25,59 @@
   padding-right: 20px;
   width: 100%;
   margin: 0 auto;
+  /* background-color: bisque; */
 }
     body {
       font-family: "Roboto", sans-serif;
+      background-color: white;
+      padding-top:80px ;
+
     }
 
     header {
       background-color: black;
-      padding: 15px 20px;
+      padding: 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 999;
     }
 
     .header-container {
       /* float: left; */
       max-width: 1200px;
       margin: 0 auto;
-      height: 30px;
+      /* height: 30px; */
+      /* background-color: aquamarine; */
     }
 
     .logo {
       color: white;
       float: left;
-      width: 50%;
+      width: 40%;
+      padding: 25px 0;
       font-size: 20px;
       /* font-weight: bold; */
-      padding-top: 5px;
+      /* padding-top: 5px; */
+      /* padding-bottom: 5px; */
+    }
+
+    h1{
+      font-size: medium;
+    }
+    .logo a{
+      text-decoration: none;
+      color: white;
     }
 
     
     #menu-toggle {
       display: none;
+    }
+    .navigation{
+      float: right;
+      width: 60%;
     }
 
     
@@ -61,11 +86,14 @@
       font-size: 28px;
       color: white;
       cursor: pointer;
+      padding: 20px 0;
     }
 
     .navigation ul {
       float: right;
       list-style: none;
+      padding: 15px 0;
+      /* margin-bottom: 10px; */
       /* margin: 0;
       padding: 0; */
       
@@ -73,6 +101,7 @@
 
     .navigation ul li {
         display: inline-block;
+        /* padding-bottom: 10px; */
         /* float: left; */
 
       position: relative;
@@ -93,11 +122,12 @@
       display: none;
       position: absolute;
       top: 100%;
-      left: 0;
+      /* left: 0; */
+      right: 10px;
       background-color: rgb(80, 72, 72);
       /* list-style: none; */
-      z-index: 999;
-      min-width: 160px;
+      /* z-index: 999; */
+      /* min-width: 160px; */
     }
     .navigation ul li ul.dropdown li {
       display: block;
@@ -128,30 +158,33 @@
     }
 
     .picture {
-      width: 60%;
+      width: 50%;
       float: left;
+      padding-right: 40px;
     }
 
     .picture img {
       border-radius: 5px;
       width: 100%;
-      max-width: 500px;
-      height: auto;
+      /* max-width: 500px; */
+      /* height: auto; */
     }
 
 
     .imagetext{
       padding: 30px;
-      /* text-align: center; */
+      padding-left: 0;
+      /* margin-left: 5px; */
+      text-align: left;
       margin-top: 50px;
-        width: 40%;
+        width: 50%;
         float: right;
     }
 
 
     .imagetext h4 {
       margin-bottom: 15px;
-      font-size: 25px;
+      font-size: 30px;
     }
 
     .imagetext p {
@@ -174,8 +207,9 @@
 
     .nextsub {
       width: 100%;
-      height: 100px;
-      padding-top: 25px;
+      /* height: 100px; */
+
+      padding: 25px;
       margin: 0;
       /* margin-left: 0; */
       background-color: gray;
@@ -185,7 +219,8 @@
       text-align: center;
     }
 .nextsub p{
-  padding-top: 10px;
+  /* padding-top: 10px; */
+  padding: 20px;
 }
  .section-banner{
   text-align: center;
@@ -197,27 +232,32 @@
  .section-cards{
   /* border: 1px solid black; */
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
   text-align: center;
   padding: 20px 0;
+  /* font-size: 0; */
   box-sizing: border-box;
-
+ 
  }
     .cards {
       background-color: white;
       border: 1px solid black;
       padding: 30px 20px 60px 20px;
       position: relative;
-      min-width: 280px;
-      max-width: 350px;
+      /* min-width: 280px; */
+      /* max-width: 350px; */
+      /* width: 100%; */
       border-radius: 8px;
       display: inline-block;
-      width: 33.33%;
+      width: 30%;
       box-sizing: border-box;
       text-align:left ;
+      height: 100%;
       margin: 0;
       margin-right: 4.3%;
       margin-top: 2%;
+      vertical-align: top;
+      min-height: 235.6px;
     
     }
     .cards:last-child{
@@ -227,8 +267,9 @@
 
     .cards h3 {
       margin-bottom: 15px;
-      font-size: 20px;
-      text-align: center;
+      font-size: 30px;
+      font-weight: 500;
+      text-align: left;
     }
 
     .cards p {
@@ -241,7 +282,7 @@
     .moreinfo {
 
       background-color: rgb(241, 239, 239);
-      border-radius: 8px;
+      border-radius: 0 0 8px 8px;
       padding: 10px;
       text-align: left;
       position: absolute;
@@ -252,8 +293,8 @@
 
     .moreinfo .btn{
       display: inline-block;
-      padding: 8px ;
-
+      padding: 10px 20px;
+      margin-left: 5px;
     }
 
     footer {
@@ -272,7 +313,20 @@
       padding-top: 15px;
     }
 
-        @media(max-width: 700px) {
+    @media  screen and (max-width: 824px) {
+
+      .imagetext{
+        padding-top: 10px;
+        margin-top: 0px;
+        h4{
+          font-size: large;
+        }
+      }
+
+      
+    }
+
+        @media screen and (max-width: 700px) {
       .hamburger {
         display: block;
         text-align: right;
@@ -280,8 +334,9 @@
 
       .navigation {
         display: none;
-        right: 10px;
-        top: 70px;
+        /* position: relative; */
+        right: 20px;
+        top: 50px;
         position: absolute;
       }
 
@@ -291,32 +346,47 @@
 
       .navigation ul {
         display: block;
-        background-color: black;
+        /* color: black; */
+        /* height: 20px; */
+        /* background-color: black; */
 
       }
+
+      .navigation ul li a{
+        color: black;
+      }
+      .cards{
+        width: 100%;
+      }
+
+      .cards:last-child{
+        margin-right:21.3px ;
+      }
+
 
 
       .picture{
         width: 100%;
+        /* display: inline; */
       }
 .imagetext{
     display: block;
     width: 100%;
+    padding-top: 5px;
 }
+
     
 .section{
     display: block;
+    width: 100%;
 }
-       .cards:last-child{
-        margin-right:21.3px ;
-      }
 
 
       .navigation ul li:hover > .dropdown  {
         display: block;
       }
     }
-    @media(max-width:365px){
+    @media screen and (max-width:365px){
       .logo{
         font-size: small;
       }
@@ -338,6 +408,4 @@
         margin-top: 0;
         padding: 0;
         /* height: 100px; */
-      }
-
-    } */
+  
